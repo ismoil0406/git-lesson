@@ -1,0 +1,54 @@
+body{
+    margin: 20px;
+}
+
+.all{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 400px;
+}
+.item{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+.green-left{
+    background-color: green;
+    grid-area: 1 / 1 / 5 / 2;
+}
+.green-top{
+    background-color: green;
+    grid-area: 1 / 2 / 3 / 4;
+}
+.red-top{
+    background-color: red;
+    grid-area: 1 / 4 / 3 / 5;
+}
+.green-right{
+    background-color: green;
+    grid-area: 3 / 4 / 5 / 5;
+}
+.yellow-center{
+    background-color: yellow;
+    grid-area: 3 / 2 / 3 / 3;
+}
+.red-center{
+    background-color: red;
+    grid-area: 3 / 3 / 4 / 4;
+}
+.red-bottom{
+    background-color: red;
+    grid-area: 4 / 2 / 5 / 3;
+}
+.yellow-bottom{
+    background-color: yellow;
+    grid-area: 4 / 3 / 5 / 4;
+}
